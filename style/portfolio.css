@@ -102,6 +102,11 @@ body{
      margin-top: 0px;
      
  } 
+ .profile-picture{
+    position: relative;
+    top: 55px;
+
+ }
 
  /* main section */
  main section{
