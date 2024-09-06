@@ -151,7 +151,9 @@ body{
      color: #757575;
  }
  
- 
+ /* .banner .profile-picture{
+    width: 100%;
+ } */
  /* resume section style */
  .resume-column-title{
      color: #474747;
@@ -211,3 +213,50 @@ body{
      border: 0px;
      width: 100%;
  }
+
+ .contact input[type="text"],  .contact input[type="email"], textarea{
+    width: 80%;
+ }
+ 
+
+
+
+ /* responsive  */
+ .hide{
+    display: none;
+ }
+   @media screen and (max-width:576px){
+    .header{
+        background-image: none;
+    }
+    nav,
+    nav > ul,
+    .skills-container, .resume-containar, .footer,.banner, .about-info-containar{
+        flex-direction: column;
+    }
+    .footer, .about ,.banner{
+        padding: 10px;
+        
+    }
+    .footer-column{
+        width: 100%;
+    }
+    #what-i-do-discription{
+        padding: 10px;
+    }
+    .profile-picture{
+        position: static;
+
+    }
+    
+   }
+
+   @media screen and (min-width:576) and (max-width:992px) {
+    .footer{
+        padding: 30px;
+    }
+    .profile-picture{
+        position: relative;
+        top: 190px;
+    }
+   }
